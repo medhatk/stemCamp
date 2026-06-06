@@ -1,16 +1,21 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
 .Sticky-header {
+    border-radius: 10px;
     display: flex;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #c4d7ff;
+    background-color: #e6edfc;
     justify-content: space-between;
+    
 }
-
 .Sticky-header .logo img {
-margin-top: 8px;
-  width: 96px;
+  width: 84px;
   align-items: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .Sticky-header .logo :hover {
   transform: scale(1.1);
@@ -22,7 +27,6 @@ margin-top: 8px;
     gap: 20px;
     align-items: center;
     color: #333;
-    padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -45,15 +49,19 @@ margin-top: 8px;
 }
 .Sticky-header .button{
     align-items: right;
-    margin-right: 20px;
-    margin-top: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .Sticky-header .button button {
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease ;
+}
+.Sticky-header .button :hover {
+    background-color: #00458f;
 }
