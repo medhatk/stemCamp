@@ -1,21 +1,23 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+/* Sticky Header Styles */
 .Sticky-header {
     border-radius: 10px;
     display: flex;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #e6edfc;
     justify-content: space-between;
     
 }
 .Sticky-header .logo img {
-  width: 84px;
+  width: 56px;
   align-items: left;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 15px;
+
 }
 .Sticky-header .logo :hover {
   transform: scale(1.1);
@@ -23,29 +25,41 @@ body {
   transition: transform 0.3s ease-out;
 }
 .Sticky-header .nav {
+    margin:5px;
+    padding-top:1px;
+    padding-bottom:1px;
     display: flex;
     gap: 20px;
     align-items: center;
     color: #333;
-    border-radius: 5px;
+    background-color: #e6edfc;
+    border-radius: 30px;
     transition: background-color 0.3s ease;
+    justify-content: space-between;
 }
 .Sticky-header .nav ul{
     display: flex;
     gap: 20px;
     list-style: none;
+    margin: 11px;
+    padding: 0;
 }
 .Sticky-header .nav ul a{
     text-decoration: none;
     color: #333;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 5px 15px;
+    border-radius: 30px;
     transition: background-color 0.3s ease;
 }
 
 .Sticky-header .nav a:hover {
-    background-color: #007bff;
+    background-color: #232F72;
+    border-radius: 30px;
     color: #fff;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-out;
+    transition: background-color 0.3s ease;
 }
 .Sticky-header .button{
     align-items: right;
@@ -55,13 +69,70 @@ body {
 }
 .Sticky-header .button button {
     padding: 15px 20px;
-    background-color: #007bff;
+    background-color: #232F72;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease ;
 }
 .Sticky-header .button :hover {
     background-color: #00458f;
+}
+/* end of sticky header styles */
+
+/* Hero Section Styles */
+.hero {
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero .hero-content {
+   align-items: left;
+   margin-left: 25px;
+   padding: 50px;
+}
+.hero .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.hero .hero-content button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.hero .hero-content .Enroll-btn {
+    background-color:#121358;
+    color: #fff;
+    margin-right: 10px;
+}
+.hero .hero-content .Enroll-btn:hover {
+    background-color: #232F72;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-out;
+}
+.hero .hero-content .Explore-btn {
+    background-color: #da6a15;
+    color: #fff;
+}
+.hero .hero-content .Explore-btn:hover {
+    background-color: #a44b0c;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-out;
+}
+.hero .hero-image {
+align-items: right;
+}
+.hero .hero-image img {
+    width: 500px;
+    padding: 50px;
+    align-items: right;
 }
