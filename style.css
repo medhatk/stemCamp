@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #232F72;
+    --secondary-color: #e6edfc;
+    --accent-color: #da6a15;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+}
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -84,6 +91,7 @@ body {
 /* Hero Section Styles */
 .hero {
     margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -135,4 +143,27 @@ align-items: right;
     width: 500px;
     padding: 50px;
     align-items: right;
+}
+/* end of hero section styles */
+
+/* our section styles */
+.our-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+.our-title h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.our-title p {
+    font-size: 18px;
+    color: #555;
+}
+.our-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px;
 }
