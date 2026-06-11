@@ -10,7 +10,8 @@ body {
 }
 /* Sticky Header Styles */
 .Sticky-header {
-    border-radius: 10px;
+    border-radius:5px;
+    background-color: rgba(237, 246, 255, 0.9);
     display: flex;
     position: sticky;
     top: 0;
@@ -19,7 +20,7 @@ body {
     
 }
 .Sticky-header .logo img {
-  width: 56px;
+  width: 68px;
   align-items: left;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -39,8 +40,6 @@ body {
     gap: 20px;
     align-items: center;
     color: #333;
-    background-color: #e6edfc;
-    border-radius: 30px;
     transition: background-color 0.3s ease;
     justify-content: space-between;
 }
@@ -167,3 +166,42 @@ align-items: right;
     gap: 20px;
     padding: 50px;
 }
+.our-content .our-card{
+    background-color: #fff;
+    border-style: solid ;
+    border-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.our-card h3{
+    background-color: #e6edfc;
+    border-radius: 25px;
+    padding:5px;
+    margin-left: 50px;
+    margin-right:50px;
+}
+/* end style for our card */
+/* statistics section styles */
+.statistics {
+    border-radius: 10px;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 5px;
+    text-align: center;
+}
+.statistics .statistic-card {
+    color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* end of statistics section styles */
