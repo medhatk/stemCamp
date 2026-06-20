@@ -111,6 +111,5 @@ registerForm.addEventListener("submit", (e) => {
     const whatsappUrl =
 `https://wa.me/201033279972?text=${encodeURIComponent(message)}`;
 
-    window.open(whatsappUrl, "_blank");
-
+window.location.href = whatsappUrl;
 });
