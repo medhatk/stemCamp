@@ -507,6 +507,33 @@ text-align: center;
     margin-top: 10px;
     cursor: auto;
 }
+.subjects-options{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    background: #f5f7ff;
+
+    padding: 15px;
+    border-radius: 15px;
+
+    margin: 10px 0;
+}
+
+.subjects-options label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.subject-label{
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+}
 
 .register-note{
     background: #f5f7ff;
@@ -874,6 +901,34 @@ text-align: center;
     .track-options label{
         font-size: 15px;
     }
+    .subjects-options{
+        flex-direction: row;
+        align-items: flex-start;
+
+        gap: 15px;
+
+        padding: 18px;
+    }
+
+    .subjects-options label{
+        width: 100%;
+
+        font-size: 15px;
+
+        padding: 10px;
+
+        background: #fff;
+
+        border-radius: 10px;
+
+        box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    }
+
+    .subjects-options input{
+        width: 18px;
+        height: 18px;
+    }
+
 
     .submit-btn{
         width: 100%;

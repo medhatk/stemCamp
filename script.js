@@ -100,11 +100,16 @@ registerForm.addEventListener("submit", (e) => {
     const track =
     document.querySelector('input[name="track"]:checked')?.value;
 
+    const perfectSubjects = [...document.querySelectorAll(
+    'input[name="perfectSubject"]:checked'
+)].map(subject => subject.value);
+
     const message = `
 اسم الطالب: ${studentName}
 رقم الهاتف: ${phone}
 رقم ولي الأمر: ${parentPhone}
 المجموع: ${score}/280
+المواد المقفولة: ${perfectSubjects.join(" - ") || "لا يوجد"}
 المسار: ${track}
 `;
 
