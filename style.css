@@ -575,6 +575,7 @@ text-align: center;
 .footer{
     background: #121358;
     color: white;
+    border-radius: 10px;
 
     margin-top: 80px;
     padding: 60px 8% 20px;
@@ -666,6 +667,28 @@ text-align: center;
 .footer-bottom{
     text-align: center;
     color: #ccc;
+}
+.developer-credit{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,.1);
+
+    color: #ccc;
+    font-size: 14px;
+}
+
+.developer-credit a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.developer-credit a:hover{
+    color: #f9b233;
 }
 
 /* للشاشات الموبايل */
