@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stem Camp</title>
+    
     <link rel="stylesheet" href="style.css">
     <link
   rel="stylesheet"
@@ -21,17 +22,23 @@
           <img src="images/stem-logo.PNG" alt="STEM Camp Logo">
         </a>
       </div>
+
+      <button class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
         <nav class = "nav">
             <ul>
+                <li><a href="#About">About</a></li>
                 <li><a href="#Courses">Courses</a></li>
                 <li><a href="#instructors">Instructors</a></li>
-                <li><a href="#About">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="button">
             <button class="Enroll-btn">Enroll Now</button>
         </div>
+
     </header>
     <!-- end of header section -->
 
@@ -41,7 +48,7 @@
             <p>Discover the excitement of science, technology, engineering, and mathematics!</p>
             <div class="hero-button">
             <button class="Enroll-btn">Enroll Now</button>
-            <button class="Explore-btn">Explore Courses</button>
+            <a href="#Courses" class="Explore-btn">Explore Courses</a>
         </div>
         </div>
         
@@ -49,7 +56,7 @@
             <img src="images/stem-logo.PNG" alt="STEM Camp Hero Image">
         </div>
     </section>
-        <container class="our-title">
+        <container id="About" class="our-title">
         <h2>Our Camp Mission</h2>
         <p>At STEM Camp, our mission is to inspire and empower the next generation of innovators, problem solvers, and leaders in science, technology, engineering, and mathematics. We are dedicated to providing a dynamic and inclusive learning environment where students can explore their passions, develop critical thinking skills, and cultivate a lifelong love for STEM. Through hands-on activities, engaging projects, and mentorship from industry experts, we aim to foster creativity, collaboration, and confidence in our campers as they embark on their STEM journey.</p>
         </container>
@@ -85,35 +92,47 @@
             </div>
         </section>
 
-        <section class="courses">
-            <container class="Featured-courses">
-            <container class="course-title">
-                <div class="title-bar"></div>
-                <h2>Featured Courses</h2>
-                <p>Explore our diverse range of courses designed to ignite your passion for STEM and help you achieve your goals.</p>
-                <div class="button">
-                    <button class="Explore-btn"> <i class="fa-solid fa-arrow-right"></i> View All Courses</button>
-                </div>
-            </container class="course-content">
-                <div class="course-card">
-                    <img src="images/course1.jpg" alt="Course 1">
-                    <h3>Introduction to Robotics</h3>
-                    <p>Learn the basics of robotics, including programming, mechanics, and electronics. Build your own robot and compete in fun challenges!</p>
-                </div>
-                <div class="course-card">
-                    <img src="images/course2.jpg" alt="Course 2">
-                    <h3>Data Science Fundamentals</h3>
-                    <p>Discover the world of data science with hands-on projects in data analysis, visualization, and machine learning using Python.</p>
-                </div>
-                <div class="course-card">
-                    <img src="images/course3.jpg" alt="Course 3">
-                    <h3>Environmental Engineering</h3>
-                    <p>Explore sustainable solutions to environmental challenges through projects in water purification, renewable energy, and waste management.</p>
-                </div>
+       <section class="courses">
+    <div class="Featured-courses">
+
+        <div class="course-title">
+            <div class="title-bar"></div>
+            <h2>Featured Courses</h2>
+            <p>Explore our diverse range of courses designed to ignite your passion for STEM and help you achieve your goals.</p>
             
-                
-            </container>
-        </section>
+        </div>
+
+        <div class="course-content">
+
+            <div id="Courses" class="course-card">
+                <img src="images/course1.jpg" alt="">
+                <h3>Introduction to Robotics</h3>
+                <p>Learn the basics of robotics...</p>
+            </div>
+
+            <div class="course-card">
+                <img src="images/course2.jpg" alt="">
+                <h3>Data Science Fundamentals</h3>
+                <p>Discover the world of data science...</p>
+            </div>
+
+            <div class="course-card">
+                <img src="images/course3.jpg" alt="">
+                <h3>Environmental Engineering</h3>
+                <p>Explore sustainable solutions...</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<div class="popup-overlay">
+    <div class="popup">
+        <span class="close-btn">&times;</span>
+        <h2 id="popup-title"></h2>
+        <p id="popup-description"></p>
+    </div>
+</div>
     
 
     <script src="script.js"></script>
