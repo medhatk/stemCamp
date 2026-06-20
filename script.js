@@ -109,7 +109,7 @@ registerForm.addEventListener("submit", (e) => {
 رقم الهاتف: ${phone}
 رقم ولي الأمر: ${parentPhone}
 المجموع: ${score}/280
-المواد المقفولة: ${perfectSubjects.join(" - ") || "لا يوجد"}
+مواد الأمتياز : ${perfectSubjects.join(" - ") || "لا يوجد"}
 المسار: ${track}
 `;
 
